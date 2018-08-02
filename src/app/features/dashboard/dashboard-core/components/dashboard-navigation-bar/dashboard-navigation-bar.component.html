@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="" routerLink="main" (click)="onClick($event)">Dashboard Routing</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href=""
+           routerLink="main"
+           routerLinkActive="active"
+           (click)="onClick($event)">
+          Main
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href=""
+           routerLink="feature"
+           [routerLinkActiveOptions]="{exact: true}"
+           routerLinkActive="active"
+           (click)="onClick($event)">
+          Feature
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
